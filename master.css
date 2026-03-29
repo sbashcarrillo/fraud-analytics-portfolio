@@ -1,0 +1,293 @@
+/* universal selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* element selector */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f7fb;
+    color: #1f2937;
+    line-height: 1.6;
+    padding: 40px 20px;
+}
+
+main,
+header,
+section,
+footer {
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+header,
+section{
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    padding: 24px 28px;
+    border: 1px solid #dbe3ee;
+    border-radius: 14px;
+    box-shadow: 0 8px 22px rgba(15, 23, 42, 0.06);
+}
+
+/* id selector */
+#resume-header {
+    background: linear-gradient(135deg, #0f172a, #1d4ed8);
+    color: #ffffff;
+}
+
+/* descendant selector */
+#resume-header a {
+    color: #dbeafe;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#resume-header a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* pseudo-class selector */
+a:hover {
+    opacity: 0.9;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+}
+
+h2 {
+    font-size: 1.35rem;
+    margin-bottom: 14px;
+    color: #0f172a;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 8px;
+}
+
+h3 {
+    font-size: 1.1rem;
+    color: #111827;
+    margin-bottom: 4px;
+}
+
+h4 {
+    font-size: 1rem;
+    color: #111827;
+    margin-bottom: 2px;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+hr {
+    display: none;
+}
+
+.tagline {
+    font-size: 1.05rem;
+    margin-bottom: 10px;
+    color: #e2e8f0;
+}
+
+.contact-line {
+    color: #f8fafc;
+}
+
+.company {
+    margin-top: 18px;
+    border-left: 3px solid #cbd5e1;
+    padding-left: 18px;
+}
+
+.role {
+    margin: 16px 0 22px 0;
+}
+
+.date {
+    font-weight: 400;
+    color: #475569;
+    margin-bottom: 10px;
+}
+
+.role-summary {
+    color: #334155;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 22px;
+    margin-bottom: 8px;
+}
+
+/* class selector */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.skills-grid li {
+    margin-bottom: 8px;
+    break-inside: avoid;
+}
+
+.summary-highlight {
+    color: #1d4ed8;
+    font-weight: 700;
+}
+
+span.small-note {
+    font-size: 0.95rem;
+    color: #64748b;
+}
+
+/* table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 14px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+caption {
+    caption-side: top;
+    text-align: left;
+    font-weight: 700;
+    color: #1d4ed8;
+    margin-bottom: 10px;
+}
+
+th,
+td {
+    border: 1px solid #dbe3ee;
+    padding: 12px;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background-color: #eff6ff;
+    color: #0f172a;
+}
+
+tr:nth-child(even) td {
+    background-color: #f8fbff;
+}
+
+footer {
+    max-width: 980px;
+    margin: 30px auto 0 auto;
+    padding: 12px 0 0 0;
+    text-align: center;
+    font-size: 0.95rem;
+    color: #64748b;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+/* list-style property */
+#skillslist {
+    list-style-type: square;
+}
+
+/* font-style property */
+em {
+    font-style: italic;
+}
+
+mark {
+    background-color: #dbeafe;
+    color: #1e3a8a;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.profile-image {
+    width: 200px;
+    max-width: 100%;
+    border-radius: 12px;
+    border: 1px solid #dbe3ee;
+    box-shadow: 0 8px 22px rgba(15, 23, 42, 0.08);
+    margin-top: 10px;
+}
+
+audio,
+video {
+    display: block;
+    margin-top: 10px;
+    max-width: 100%;
+}
+
+form {
+    margin-top: 10px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-full {
+    grid-column: 1 / -1;
+}
+
+label,
+legend {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #0f172a;
+}
+
+input,
+select,
+textarea,
+button {
+    font: inherit;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #1f2937;
+}
+
+textarea {
+    resize: vertical;
+}
+
+fieldset {
+    border: 1px solid #dbe3ee;
+    border-radius: 10px;
+    padding: 14px;
+}
+
+fieldset label {
+    font-weight: 400;
+    margin-right: 18px;
+}
+
+button {
+    background: #1d4ed8;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    max-width: 180px;
+}
+
+button:hover {
+    background: #1e40af;
+}
